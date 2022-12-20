@@ -10,6 +10,7 @@ const FactDisplayer = ({ currentFact, favouriteFacts }: any): JSX.Element => {
     >
       <div
         className="react-datepicker__header"
+        data-cy="current-fact-div"
         style={{ background: "white", borderStyle: "none" }}
       >
         <h3 className="react-datepicker__current-month">Current Fact:</h3>
@@ -26,6 +27,7 @@ const FactDisplayer = ({ currentFact, favouriteFacts }: any): JSX.Element => {
       <div>
         <h3 className="react-datepicker__current-month">Favorite Facts:</h3>
         <div
+          data-cy="saved-facts-div"
           style={{ overflowY: "scroll", height: "100px", textAlign: "left" }}
         >
           {favouriteFacts &&
